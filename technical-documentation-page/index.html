@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li>
+          <a class="nav-link" href="#Function_declarations"
+            >Function declarations</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            JavaScript is a cross-platform, object-oriented scripting language.
+            It is a small and lightweight language. Inside a host environment
+            (for example, a web browser), JavaScript can be connected to the
+            objects of its environment to provide programmatic control over
+            them.
+          </p>
+          <p>
+            JavaScript contains a standard library of objects, such as Array,
+            Date, and Math, and a core set of language elements such as
+            operators, control structures, and statements. Core JavaScript can
+            be extended for a variety of purposes by supplementing it with
+            additional objects
+          </p>
+          <code
+            >function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");</code
+          >
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>
+            A JavaScript identifier must start with a letter, underscore (_), or
+            dollar sign ($); subsequent characters can also be digits (0-9).
+            Because JavaScript is case sensitive, letters include the characters
+            "A" through "Z" (uppercase) and the characters "a" through "z"
+            (lowercase).
+          </p>
+          <p>
+            You can use ISO 8859-1 or Unicode letters such as å and ü in
+            identifiers. You can also use the Unicode escape sequences as
+            characters in identifiers. Some examples of legal names are
+            Number_hits, temp99, and _name.
+          </p>
+          <code>let y = 13.</code>
+          <code>const PI = 3.14;</code>
+        </article>
+      </section>
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <p>The latest ECMAScript standard defines seven data types:</p>
+          <ul>
+            <li>Six data types that are primitives:</li>
+            <ul>
+              <li>Boolean. true and false.</li>
+              <li>
+                null. A special keyword denoting a null value. Because
+                JavaScript is case-sensitive, null is not the same as Null,
+                NULL, or any other variant.
+              </li>
+              <li>undefined. A top-level property whose value is undefined.</li>
+              <li>Number. 42 or 3.14159.</li>
+              <li>String. "Howdy"</li>
+              <li>
+                Symbol (new in ECMAScript 2015). A data type whose instances are
+                unique and immutable.
+              </li>
+            </ul>
+            <li>and Object</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Function_declarations">
+        <header>Function declarations</header>
+        <article>
+          <p>
+            A function definition (also called a function declaration, or
+            function statement) consists of the function keyword, followed by:
+          </p>
+          <ul>
+            <li>The name of the function.</li>
+            <li>
+              A list of arguments to the function, enclosed in parentheses and
+              separated by commas.
+            </li>
+            <li>
+              The JavaScript statements that define the function, enclosed in
+              curly brackets, { }.
+            </li>
+          </ul>
+          <p>
+            For example, the following code defines a simple function named
+            square:
+          </p>
+          <code>function square(number) { return number * number; }</code>
+          <p>
+            he function square takes one argument, called number. The function
+            consists of one statement that says to return the argument of the
+            function (that is, number) multiplied by itself. The return
+            statement specifies the value returned by the function.
+          </p>
+          <p>
+            Primitive parameters (such as a number) are passed to functions by
+            value; the value is passed to the function, but if the function
+            changes the value of the parameter, this change is not reflected
+            globally or in the calling function.
+          </p>
+          <code>return number * number;</code>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <p>
+            All the documentation in this page is taken from
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+              target="_blank"
+              >MDN</a
+            >
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

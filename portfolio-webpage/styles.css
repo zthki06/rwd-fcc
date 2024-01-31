@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+}
+
+#welcome-section {
+  background-color: aliceblue;
+  height: 500px;
+}
+
+header {
+  color: black;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#navbar {
+  position: fixed;
+  border-color: rgb(21, 21, 22);
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1000px;
+}
+
+#navbar a {
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 800px;
+  height: 400px;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+}
+
+#contact {
+  background-color: chartreuse;
+}
+#contact h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#contact > ul li {
+  font-size: 25px;
+
+  align-self: center;
+}
+@media (max-width: 768px) {
+  body {
+    background-color: bisque;
+  }
+}
